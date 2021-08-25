@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: Montserrat;
+    cursor: none;
+}
+
+/* 
+**********************
+    HEADER STYLES
+**********************
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+
+/* 
+**********************
+    MAIN STYLES
+**********************
+*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+main .left{
+    width: 400px;
+}
+
+main .left h1{
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+
+main .left p{
+    font-size: 1.4rem;
+    color: grey;
+}
+
+main img{
+    object-fit: cover;
+    height: 400px;
+    z-index: -2;
+}
+
+/* 
+**********************
+    CURSOR STYLES
+**********************
+*/
+
+.cursor{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    pointer-events: none;
+    backdrop-filter: grayscale();
+    transform: translate(-50% , -50%);
+    z-index: -1;
+    transition: all .7s ease;
+    transition-property: background-color , transform;
+}
+
+.cursor-hovered{
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+}
+
+.hovered{
+    color: white;
+}
